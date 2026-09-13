@@ -27,10 +27,10 @@
     "visibility": 10000,
     "weather": [
         {
-                "description": "few clouds",
+                "description": "",
                 "icon": "02d",
-                "id": 504,
-                "main": "Clouds"
+                "id": 202,
+                "main": "This site will use a fake forcast until I'm able to set up cloudflare"
         }
     ],
     "wind": {

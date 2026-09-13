@@ -43,7 +43,7 @@ function saveLocation(position, resolve){
 }
 
 async function getWeather(coords){
-    const debug = false;
+    const debug = true;
     const weatherurl = debug ? 'fake_forecast.json' : `https://api.openweathermap.org/data/2.5/weather?lat=${coords.latitude}&lon=${coords.longitude}&appid=d50daadd909d583c949fca136d5db47b&units=imperial`
     const qualityrurl = debug ? 'fake_quality.json' : `http://api.openweathermap.org/data/2.5/air_pollution?lat=${coords.latitude}&lon=${coords.longitude}&appid=d50daadd909d583c949fca136d5db47b`
    
@@ -272,7 +272,7 @@ function getWeatherStats(forecast){
             break;
     }
 
-    // weatherstats.isday = true;
+    weatherstats.isday = true;
     // weatherstats.rain = 3;
     return weatherstats;
 }
