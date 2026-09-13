@@ -1,0 +1,145 @@
+:root{
+    --gradtopcol--: rgb(43, 159, 255);
+    --gradbotcol--: rgb(148, 221, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(var(--gradtopcol--), var(--gradbotcol--));
+    background-attachment: fixed;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 4fr 3fr 3fr;
+    align-content: space-evenly;
+    grid-auto-rows: 1fr;
+}
+
+#clouds{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+#rain{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.row{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.rtitle{
+    height: 70px;
+    padding: 5px 0;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    overflow-wrap: anywhere;
+    background-color: rgba(51, 51, 51, 0.3);
+}
+
+.node{
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.3);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.node h2{
+    width: 80%;
+    padding: 4px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-weight: 400;
+    background-color: white;
+    color: var(--gradtopcol--);
+}
+
+#windspeed{
+    margin-top: 25px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+#windspeed p{
+    font-size: 1.8em;
+}
+
+#winddir{
+    margin: 25px;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+#temp{
+    background-color: rgba(51, 51, 51, 0);
+    font-size: 1.2em;
+    justify-content: center;
+}
+
+#temp h1{
+    font-size: 2em;
+    font-weight: 100;
+}
+
+#forecast th, #forecast td{
+    padding: 0 20px;
+}
+
+#sunset h1{
+    margin: 60px 0;
+}
+
+#quality h1{
+    margin-top: 70px;
+}
+
+#time{
+    position: absolute;
+    bottom: 0;
+    font-size: 1.8em;
+    transition: color 0.15s;
+}
+
+#time:hover{
+    color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 700px) {
+    .rtitle{
+        font-size: 1em;
+    }
+
+    #forecast th, #forecast td{
+        padding: 0 5px;
+    }
+
+    #quality h1{
+        margin-top: 40px;
+    }
+}

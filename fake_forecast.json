@@ -1,0 +1,40 @@
+{  
+    "coord": {
+        "lat": 41.8197,
+        "lon": -71.4617
+    },
+    "dt": 1788647976,
+    "id": 5223681,
+    "main": {
+        "feels_like": 82.96,
+        "grnd_level": 1000,
+        "humidity": 56,
+        "pressure": 1008,
+        "sea_level": 1008,
+        "temp": 81.39,
+        "temp_max": 83.21,
+        "temp_min": 78.04
+    },
+    "name": "North Providence",
+    "sys": {
+        "country": "US",
+        "id": 2007842,
+        "sunrise": 1788516890,
+        "sunset": 1788563722,
+        "type": 2
+    },
+    "timezone": -14400,
+    "visibility": 10000,
+    "weather": [
+        {
+                "description": "few clouds",
+                "icon": "02d",
+                "id": 504,
+                "main": "Clouds"
+        }
+    ],
+    "wind": {
+        "deg": 310,
+        "speed": 15.66
+    }
+}
